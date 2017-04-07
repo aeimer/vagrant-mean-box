@@ -14,8 +14,10 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A1
 echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
 
 # install with apt-get
+echo
 echo "## Updating dependencies"
 sudo apt-get update -qq
+echo
 echo "## Installing with APT-GET"
 sudo apt-get install -y -qq \
 git \
@@ -49,6 +51,14 @@ sudo npm install -g \
 bower \
 yo \
 nodemon
+
+# Set entry dir
+cat <<EOT >> /home/ubuntu/.bashrc
+
+cd /vagrant
+echo
+echo "Hi there, have fun :)"
+EOT
 
 # Finished
 echo

@@ -47,7 +47,8 @@ echo "## Installing with NPM (GLOBAL)"
 sudo npm install -g \
 @angular/cli \
 bower \
-yo
+yo \
+nodemon
 
 # Finished
 echo

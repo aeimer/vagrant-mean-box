@@ -15,11 +15,14 @@ echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb
 
 # install with apt-get
 echo
-echo "## Updating dependencies"
-sudo apt-get update -qq
+echo "## Updating dependency tree"
+sudo apt-get -qq update
+echo
+echo "## Upgrading programms"
+sudo apt-get -y --force-yes -qq upgrade
 echo
 echo "## Installing with APT-GET"
-sudo apt-get install -y -qq \
+sudo apt-get -y -qq install \
 git \
 mongodb-org \
 nodejs
@@ -53,7 +56,7 @@ yo \
 nodemon
 
 # Set entry dir
-cat <<EOT >> /home/ubuntu/.bashrc
+cat <<EOT >> /home/vagrant/.bashrc
 
 cd /vagrant
 echo

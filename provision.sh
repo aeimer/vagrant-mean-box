@@ -18,8 +18,11 @@ echo
 echo "## Updating dependency tree"
 sudo apt-get -qq update
 echo
+echo "## Holding packages"
+sudo apt-mark hold grub-pc grub-pc-bin grub2-common grub-common
+echo
 echo "## Upgrading programms"
-sudo apt-get -y --force-yes -qq upgrade
+sudo apt-get -y -qq upgrade
 echo
 echo "## Installing with APT-GET"
 sudo apt-get -y -qq install \
@@ -67,10 +70,20 @@ EOT
 echo
 echo "## INFOS"
 echo VERSION CONTROL:
+echo -n GIT:
+git --version
 echo -n NODE JS:
 node -v
 echo -n NPM:
 npm -v
+echo -n Angular-CLI:
+ng --version
+echo -n Bower:
+bower --version
+echo -n Yo:
+yo --version
+echo -n Nodemon:
+nodemon --version
 echo MONGODB:
 sudo systemctl status mongodb
 

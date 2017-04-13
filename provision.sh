@@ -5,7 +5,7 @@ echo "## PROVISION SCRIPT ##"
 echo
 
 # add nodejs dependency
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 
 # add mongodb dependency
 echo

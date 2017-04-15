@@ -40,7 +40,7 @@ After=network.target
 
 [Service]
 User=mongodb
-ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
+ExecStart=/usr/bin/mongod --quiet --bind_ip 0.0.0.0 --config /etc/mongod.conf
 
 [Install]
 WantedBy=multi-user.target

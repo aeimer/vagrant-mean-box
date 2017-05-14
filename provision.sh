@@ -56,7 +56,8 @@ sudo npm install -g \
 @angular/cli \
 bower \
 yo \
-nodemon
+nodemon \
+gulp
 
 # Set entry dir
 cat <<EOT >> /home/vagrant/.bashrc

@@ -6,11 +6,13 @@ This is a MEAN (MongoDB Express Angular NodeJS) Stack.
 ## What's inside?
 - Git (2.7.4)
 - NodeJS (7.9.0)
+- Google Chrome (48?!)
 - NPM (4.2.0)
 - Angular-CLI (1.0.0)
 - Bower (1.8.0)
 - Yo (1.8.5)
 - Nodemon (1.11.0)
+- gulp (3.9.1?!)
 - MongoDB (3.4.3)
 
 ## Why

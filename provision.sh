@@ -37,7 +37,8 @@ sudo apt-get -y -qq install \
 git \
 mongodb-org \
 nodejs \
-google-chrome-stable
+google-chrome-stable \
+build-essential
 
 # let mongodb start as a service
 echo

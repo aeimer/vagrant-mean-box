@@ -14,6 +14,7 @@ This is a MEAN (MongoDB Express Angular NodeJS) Stack.
 - Nodemon (1.11.0)
 - gulp (3.9.1?!)
 - MongoDB (3.4.3)
+- Build-Esseantial => to compile for e.g. npm install bcrypt
 
 ## Why
 This Box may will be used for the open-source project: https://github.com/h-da/geli

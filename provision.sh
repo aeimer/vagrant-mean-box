@@ -78,6 +78,11 @@ echo
 echo "Hi there, have fun :)"
 EOT
 
+# Cleanup part
+echo
+echo "## Cleaning up system"
+./cleanup.sh
+
 # Finished
 echo
 echo "## INFOS"

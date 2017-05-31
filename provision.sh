@@ -67,7 +67,8 @@ sudo npm install -g \
 bower \
 yo \
 nodemon \
-gulp
+gulp \
+node-gyp
 
 # Set entry dir
 cat <<EOT >> /home/vagrant/.bashrc
@@ -99,6 +100,8 @@ echo -n Nodemon:
 nodemon --version
 echo -n gulp:
 gulp --version
+echo -n node-gyp:
+node-gyp --version
 echo MONGODB:
 sudo systemctl status mongodb
 

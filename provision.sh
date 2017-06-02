@@ -35,11 +35,11 @@ echo
 echo "## Installing with APT-GET"
 sudo apt-get -y -qq install \
 git \
-mongodb-org \
+mongodb-org=3.4.3 \
 nodejs \
 google-chrome-stable \
 build-essential \
-virtualbox-guest-dkms
+virtualbox-guest-dkms # I run the vbguest-additions-plugin for vagrant, so this call is not needed for me
 
 # let mongodb start as a service
 echo
@@ -82,7 +82,7 @@ EOT
 # Cleanup part
 echo
 echo "## Cleaning up system"
-./cleanup.sh
+/vagrant/cleanup.sh
 
 # Finished
 echo

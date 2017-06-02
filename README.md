@@ -7,15 +7,15 @@ This is a MEAN (MongoDB Express Angular NodeJS) Stack.
 | Packagename      | Version | Info                                          |
 |------------------|---------|-----------------------------------------------|
 | Git              | 2.7.4   |                                               |
-| Google Chrome    | 59      | real headless mode                            |
-| NodeJS           | 8.0.0   |                                               |
-| npm              | 5.0.0   | package-lock.json                             |
-| Angular-CLI      | 1.0.0   |                                               |
+| Google Chrome    | 58      | real headless mode                            |
+| NodeJS           | 7.10.0  |                                               |
+| npm              | 4.2.0   | package-lock.json                             |
+| Angular-CLI      | 1.1.0   |                                               |
 | Bower            | 1.8.0   |                                               |
 | Yo               | 1.8.5   |                                               |
 | Nodemon          | 1.11.0  |                                               |
 | gulp             | 3.9.1   |                                               |
-| node-gyp         | 3.6.1   |                                               |
+| node-gyp         | 3.6.2   |                                               |
 | MongoDB          | 3.4.3   |                                               |
 | Build-Essentials | 12.1    | to compile for e.g. `npm install bcrypt lwip` |
 

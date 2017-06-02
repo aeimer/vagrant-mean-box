@@ -38,7 +38,8 @@ git \
 mongodb-org \
 nodejs \
 google-chrome-stable \
-build-essential
+build-essential \
+virtualbox-guest-dkms
 
 # let mongodb start as a service
 echo

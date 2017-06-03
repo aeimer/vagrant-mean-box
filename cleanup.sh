@@ -5,7 +5,7 @@
 echo
 echo "## removes unneccesary packages"
 # Remove unneccesary packages
-sudo aptitude -y purge \
+sudo apt-get -y purge \
 ri  \
 installation-report \
 landscape-common \
@@ -25,8 +25,7 @@ python-serial \
 python-gobject \
 python-pam \
 python-openssl \
-libffi5 \
-linux-image-3.0.0-12-generic-pae
+libffi5
 
 # Remove APT cache
 echo
@@ -37,39 +36,39 @@ sudo apt-get autoclean -y
 # Zero free space to aid VM compression
 echo
 echo "## Zero free space"
-dd if=/dev/zero of=/EMPTY bs=1M
-rm -f /EMPTY
+sudo dd if=/dev/zero of=/EMPTY bs=1M
+sudo rm -f /EMPTY
 
 # Remove bash history
 echo
 echo "## Remove bash-history"
 unset HISTFILE
-rm -f /root/.bash_history
-rm -f /home/vagrant/.bash_history
+sudo rm -f /root/.bash_history
+sudo rm -f /home/vagrant/.bash_history
 
 # Cleanup log files
 echo
 echo "## Remove logfiles"
-find /var/log -type f | while read f; do echo -ne '' > $f; done;
+sudo find /var/log -type f | while read f; do sudo echo -ne '' > $f; done;
 
 # Whiteout root
 echo
 echo "## Whiteout root"
-count=`df --sync -kP / | tail -n1  | awk -F ' ' '{print $4}'`; 
+count=`sudo df --sync -kP / | tail -n1  | awk -F ' ' '{print $4}'`; 
 let count--
-dd if=/dev/zero of=/tmp/whitespace bs=1024 count=$count;
-rm /tmp/whitespace;
+sudo dd if=/dev/zero of=/tmp/whitespace bs=1024 count=$count;
+sudo rm /tmp/whitespace;
  
 # Whiteout /boot
 echo
 echo "## Whiteout /boot"
 count=`df --sync -kP /boot | tail -n1 | awk -F ' ' '{print $4}'`;
 let count--
-dd if=/dev/zero of=/boot/whitespace bs=1024 count=$count;
-rm /boot/whitespace;
+sudo dd if=/dev/zero of=/boot/whitespace bs=1024 count=$count;
+sudo rm /boot/whitespace;
  
 swappart=`cat /proc/swaps | tail -n1 | awk -F ' ' '{print $1}'`
-swapoff $swappart;
-dd if=/dev/zero of=$swappart;
-mkswap $swappart;
-swapon $swappart;
+sudo swapoff $swappart;
+sudo dd if=/dev/zero of=$swappart;
+sudo mkswap $swappart;
+sudo swapon $swappart;

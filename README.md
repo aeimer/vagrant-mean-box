@@ -16,7 +16,7 @@ This is a MEAN (MongoDB Express Angular NodeJS) Stack.
 | Nodemon          | 1.11.0  |                                               |
 | gulp             | 3.9.1   |                                               |
 | node-gyp         | 3.6.2   |                                               |
-| MongoDB          | 3.4.3   |                                               |
+| MongoDB          | 3.4.4   |                                               |
 | Build-Essentials | 12.1    | to compile for e.g. `npm install bcrypt lwip` |
 
 ## Why

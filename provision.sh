@@ -35,7 +35,7 @@ echo
 echo "## Installing with APT-GET"
 sudo apt-get -y -qq install \
 git \
-mongodb-org=3.4.3 \
+mongodb-org \
 nodejs \
 google-chrome-stable \
 build-essential \
@@ -92,6 +92,8 @@ echo -n GIT:
 git --version
 echo -n Chrome:
 google-chrome-stable --version
+echo -n BuildEssentials
+apt-cache policy build-essential
 echo -n NODE JS:
 node -v
 echo -n NPM:
@@ -109,6 +111,7 @@ gulp --version
 echo -n node-gyp:
 node-gyp --version
 echo MONGODB:
+mongod --version
 sudo systemctl status mongodb
 
 echo

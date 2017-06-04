@@ -26,5 +26,7 @@ This Box is used for the open-source project: https://github.com/h-da/geli
 I recommend you to copy the [`Vagrantfile.example`](Vagrantfile.example) and extend it to your needs.   
 The Vagrant Repo is here: https://atlas.hashicorp.com/aeimer/boxes/mean-box
 
+You can activate NFS by (un)comment the mount lines, I hat some problems with that, so try it, but I have commented it out by deault.
+
 ## Build
 You can use the Box from the Vagrant-Repo, but to build this box (e.g. if you customized the `provision.sh`) just run the `./build.sh`.

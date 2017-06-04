@@ -39,7 +39,10 @@ mongodb-org \
 nodejs \
 google-chrome-stable \
 build-essential \
-virtualbox-guest-dkms # I run the vbguest-additions-plugin for vagrant, so this call is not needed for me
+xvfb \
+virtualbox-guest-dkms 
+# XVFB: So we can run headless browser tests
+# VB-guest-addtitions: I run the vbguest-additions-plugin for vagrant, so this call is not needed for me
 
 # let mongodb start as a service
 echo

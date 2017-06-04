@@ -4,20 +4,21 @@ _A Ubuntu:xenial64 based MEAN-Stack for development_
 This is a MEAN (MongoDB Express Angular NodeJS) Stack.
 
 ## What's inside?
-| Packagename      | Version | Info                                          |
-|------------------|---------|-----------------------------------------------|
-| Git              | 2.7.4   |                                               |
-| Google Chrome    | 58      |                                               |
-| NodeJS           | 7.10.0  |                                               |
-| npm              | 4.2.0   |                                               |
-| Angular-CLI      | 1.1.0   |                                               |
-| Bower            | 1.8.0   |                                               |
-| Yo               | 1.8.5   |                                               |
-| Nodemon          | 1.11.0  |                                               |
-| gulp             | 3.9.1   |                                               |
-| node-gyp         | 3.6.2   |                                               |
-| MongoDB          | 3.4.4   |                                               |
-| Build-Essentials | 12.1    | to compile for e.g. `npm install bcrypt lwip` |
+| Packagename      | Version  | Info                                          |
+|------------------|----------|-----------------------------------------------|
+| Git              | 2.7.4    |                                               |
+| Google Chrome    | 58       |                                               |
+| NodeJS           | 7.10.0   |                                               |
+| npm              | 4.2.0    |                                               |
+| Angular-CLI      | 1.1.0    |                                               |
+| Bower            | 1.8.0    |                                               |
+| Yo               | 1.8.5    |                                               |
+| Nodemon          | 1.11.0   |                                               |
+| gulp             | 3.9.1    |                                               |
+| node-gyp         | 3.6.2    |                                               |
+| MongoDB          | 3.4.4    |                                               |
+| Build-Essentials | 12.1     | to compile for e.g. `npm install bcrypt lwip` |
+| Xvfb             | 2:1.18.4 | to run chrome "headless"                      |
 
 ## Why
 This Box is used for the open-source project: https://github.com/h-da/geli

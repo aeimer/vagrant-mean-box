@@ -4,11 +4,6 @@ echo
 echo "## PROVISION SCRIPT ##"
 echo
 
-# add nodejs dependency
-echo
-echo "## Adding NodeJS 7.x Repo to apt-get"
-curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
-
 # add mongodb dependency
 echo
 echo "## Adding MongoDB Repo to apt-get"
@@ -36,13 +31,19 @@ echo "## Installing with APT-GET"
 sudo apt-get -y -qq install \
 git \
 mongodb-org \
-nodejs \
 google-chrome-stable \
 build-essential \
 xvfb \
 virtualbox-guest-dkms 
 # XVFB: So we can run headless browser tests
 # VB-guest-addtitions: I run the vbguest-additions-plugin for vagrant, so this call is not needed for me
+echo
+echo "## Installing NVM"
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+source ~/.bashrc
+echo
+echo "## Installing current NodeJS LTS"
+nvm install --lts
 
 # let mongodb start as a service
 echo
